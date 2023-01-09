@@ -1,0 +1,369 @@
+Task 1
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ mkdir test1
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ cd ~/test1
+
+natko@NKPK MINGW64 ~/test1
+$ touch file1.txt
+
+natko@NKPK MINGW64 ~/test1
+$ touch file2.txt
+
+natko@NKPK MINGW64 ~/test1
+$ touch file3.txt
+
+natko@NKPK MINGW64 ~/test1
+$ ls
+file1.txt  file2.txt  file3.txt
+
+natko@NKPK MINGW64 /
+$ cd /c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ mkdir test2
+
+natko@NKPK MINGW64 ~
+$ rmdir test2
+
+natko@NKPK MINGW64 ~
+$ cd ~/test1
+
+natko@NKPK MINGW64 ~/test1
+$ rm file2.txt
+
+natko@NKPK MINGW64 ~/test1
+$ ls
+file1.txt  file3.txt
+
+natko@NKPK MINGW64 ~/test1
+$ cd /c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ cd ~/test3
+
+natko@NKPK MINGW64 ~/test3
+$ touch file1.txt
+
+natko@NKPK MINGW64 ~/test3
+$ touch file2.txt
+
+natko@NKPK MINGW64 ~/test3
+$ ls
+file1.txt  file2.txt
+
+natko@NKPK MINGW64 ~/test3
+$ cd ~
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ rm -R test3
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ mkdir test4
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ mv test1/file1.txt test4
+
+
+natko@NKPK MINGW64 ~
+$ mv test1/file3.txt test4
+
+natko@NKPK MINGW64 ~
+
+$ ls test4
+file1.txt  file3.txt
+
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line1" >> file1.txt
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line2" >> file1.txt
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line3" >> file1.txt
+
+natko@NKPK MINGW64 ~/test4
+$ cat file1.txt
+
+line1
+line2
+line3
+
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line4" >> file3.txt
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line5" >> file3.txt
+
+natko@NKPK MINGW64 ~/test4
+$ echo "line6" >> file3.txt
+
+natko@NKPK MINGW64 ~/test4
+$ cat file3.txt
+line4
+line5
+line6
+
+natko@NKPK MINGW64 ~/test4
+$ cat file1.txt file3.txt
+
+line1
+line2
+line3
+line4
+line5
+line6
+
+
+natko@NKPK MINGW64 ~/test4
+$ vi file1.txt
+
+natko@NKPK MINGW64 ~/test4
+$ cat file1.txt
+
+line7
+line8
+line9
+
+natko@NKPK MINGW64 ~/test4
+$ vi file3.txt
+
+natko@NKPK MINGW64 ~/test4
+$ cat file3.txt
+line10
+line11
+line12
+
+
+
+
+Task 2
+
+natko@NKPK MINGW64 ~
+$ pwd
+/c/Users/natko
+
+natko@NKPK MINGW64 ~
+$ mkdir test3
+
+natko@NKPK MINGW64 ~
+$ cd ~/test3
+
+natko@NKPK MINGW64 ~/test3
+$ touch file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ touch file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ touch file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ ls
+file4.txt  file5.txt  file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row2" >> file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row3" >> file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row4" >> file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row1" >> file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row2" >> file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row3" >> file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row4" >> file5.txt
+
+natko@NKPK MINGW64 ~/test3
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row1" >> file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row2" >> file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row3" >> file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo "row4" >> file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ grep -i row2 file5.txt
+row2
+
+natko@NKPK MINGW64 ~/test3
+$ grep row2 file5.txt
+row2
+
+natko@NKPK MINGW64 ~/test3
+$ grep -irl "row"
+file4.txt
+file5.txt
+file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ grep -ir "row"
+file4.txt:row1
+file4.txt:row2
+file4.txt:row3
+file4.txt:row4
+file5.txt:row1
+file5.txt:row2
+file5.txt:row3
+file5.txt:row4
+file6.txt:row1
+file6.txt:row2
+file6.txt:row3
+file6.txt:row4
+
+natko@NKPK MINGW64 ~/test3
+$ grep -ic row file6.txt
+4
+
+natko@NKPK MINGW64 ~/test3
+$ find . -type f -name file5.txt
+./file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ ls
+file4.txt  file5.txt  file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ find . -name "file5.txt" -delete -print
+./file5.txt
+
+natko@NKPK MINGW64 ~/test3
+$ ls
+file4.txt  file6.txt
+
+natko@NKPK MINGW64 ~/test3
+$ echo test > file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ cat file4.txt
+test
+
+natko@NKPK MINGW64 ~/test3
+$ echo fail > file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ cat file4.txt
+fail
+
+natko@NKPK MINGW64 ~/test3
+$ echo test >> file4.txt
+
+natko@NKPK MINGW64 ~/test3
+$ cat file4.txt
+fail
+test
+
+natko@NKPK MINGW64 ~/Desktop
+$ ps aux
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     1463    1423    1463       2428  pty0      197612 15:14:08 /usr/bin/ps
+     1423    1422    1423      14088  pty0      197612 15:03:07 /usr/bin/bash
+     1422       1    1422       4180  ?         197612 15:03:07 /usr/bin/mintty
+
+natko@NKPK MINGW64 ~/Desktop
+$ kill 666
+bash: kill: (666) - No such process
+
+$ ping artsiomrusau.com
+
+Pinging artsiomrusau.com [185.215.4.92] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 185.215.4.92:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+
+natko@NKPK MINGW64 ~/Desktop
+$ ping -n 5 artsiomrusau.com
+
+Pinging artsiomrusau.com [185.215.4.92] with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 185.215.4.92:
+    Packets: Sent = 5, Received = 0, Lost = 5 (100% loss),
+
+natko@NKPK MINGW64 ~/Desktop
+$ curl https://petstore.swagger.io/v2/pet/findByStatus?status=pending
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  1542    0  1542    0     0   1959      0 --:--:-- --:--:-- --:--:--  1959[{"id":9223372036854625569,"category":{"id":-96087438,"name":"eu qui"},"name":"doggie","photoUrls":["deserunt nostrud pariatur do","exercitation"],"tags":[{"id":2238351,"name":"officia amet aute"},{"id":72981749,"name":"in in voluptate dolore fugiat"}],"status":"pending"},{"id":9223372036854625582,"category":{"id":-93970098,"name":"nulla occaecat eiusmod cupidatat mollit"},"name":"doggie","photoUrls":["fugiat dolor est reprehenderit","ipsum magna ea nisi"],"tags":[{"id":-12746721,"name":"consequat ex"},{"id":29114087,"name":"et eu anim ut"}],"status":"pending"},{"id":9223372036854625834,"category":{"id":11100781,"name":"velit aliqua in qui occaecat"},"name":"doggie","photoUrls":["in eiusmod sit esse culpa",""],"tags":[{"id":-28127133,"name":"aute ut velit ullamco"},{"id":57701361,"name":"aliqua aliquip"}],"status":"pending"},{"id":9223372036854625858,"category":{"id":11100781,"name":"velit aliqua in qui occaecat"},"name":"doggie","photoUrls":["in eiusmod sit esse culpa",""],"tags":[{"id":-28127133,"name":"aute ut velit ullamco"},{"id":57701361,"name":"aliqua aliquip"}],"status":"pending"},{"id":9223372036854626000,"category":{"id":0,"name":"string"},"name":"doggie","photoUrls":["string"],"tags":[{"id":0,"name":"string"}],"status":"pending"},{"id":9223372036854626245,"category":{"id":82365647,"name":"dolore aute deserunt amet"},"name":"doggie","photoUrls":["mollit aliquip dolore","mollit laborum"],"tags":[{"id":-92123938,"name":"Duis consectetur officia"},{"id":-19615349,"name":"consectetur non"}],"status":"pending"}]
+
+natko@NKPK MINGW64 ~/Desktop
+$ curl https://petstore.swagger.io/v2/pet/9223372036854625569
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   271    0   271    0     0    411      0 --:--:-- --:--:-- --:--:--   412{"id":9223372036854625569,"category":{"id":-96087438,"name":"eu qui"},"name":"doggie","photoUrls":["deserunt nostrud pariatur do","exercitation"],"tags":[{"id":2238351,"name":"officia amet aute"},{"id":72981749,"name":"in in voluptate dolore fugiat"}],"status":"pending"}
+
+natko@NKPK MINGW64 ~/Desktop
+$ curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "id": 1,
+  "username": "SomeUser",
+  "firstName": "Some",
+  "lastName": "User",
+  "email": "SomeUser@user.com",
+  "password": "1234",
+  "phone": "191998877",
+  "userStatus": 1
+}'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   224    0    43  100   181     64    272 --:--:-- --:--:-- --:--:--   337{"code":200,"type":"unknown","message":"1"}
+
+
